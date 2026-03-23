@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Burger Menu
     const burger = document.getElementById("burger");
     const menu = document.getElementById("menu");
-
     if (burger && menu) {
         burger.addEventListener("click", () => {
             menu.classList.toggle("active");
