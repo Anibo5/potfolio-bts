@@ -42,19 +42,17 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 /* 🏠 HERO */
 .hero-section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .glitch { font-family: 'Orbitron'; font-size: clamp(2.2rem, 8vw, 4.2rem); letter-spacing: 12px; color: var(--neon-cyan); }
+.hero-desc { max-width: 750px; margin: 30px auto; color: #94a3b8; font-size: 1.1rem; }
 
 /* 🚀 BOUTONS */
 .hero-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .btn-cyber, .btn-outline { padding: 16px 32px; font-family: 'Orbitron'; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; transition: 0.4s; min-width: 250px; border-radius: 4px; display: inline-flex; justify-content: center; align-items: center; }
 .btn-cyber { border: 2px solid var(--neon-cyan); color: var(--neon-cyan); }
 .btn-cyber:hover { background: var(--neon-cyan); color: #020617; box-shadow: 0 0 25px var(--neon-cyan); }
-
-/* 🏥 STAGE IMAGES */
-.ghu-logo { max-width: 150px; height: auto; border-radius: 8px; background: white; padding: 10px; }
-.proof-img { max-width: 100%; height: auto; border-radius: 8px; margin: 15px 0; border: 1px solid var(--glass-border); display: block; }
-.img-group { display: flex; gap: 15px; flex-wrap: wrap; }
-.separator { height: 1px; background: var(--glass-border); margin: 30px 0; }
-.separator-mini { height: 1px; background: var(--glass-border); margin: 20px 0; width: 30%; }
+.btn-outline { border: 2px solid #475569; color: #ffffff; background: rgba(255, 255, 255, 0.05); }
+.btn-outline:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+.btn-mini { padding: 6px 15px; font-family: 'Orbitron'; font-size: 0.65rem; color: var(--neon-cyan); text-decoration: none; border-radius: 4px; margin-top: 10px; display: inline-block; }
+.btn-mini:hover { background: var(--neon-cyan); color: #020617; }
 
 /* 💎 SECTIONS */
 .glass-card { background: var(--glass); backdrop-filter: blur(15px); border-radius: 20px; padding: 45px; transition: 0.4s; }
@@ -62,11 +60,17 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .container { width: 100%; max-width: 1150px; margin: 0 auto; }
 .section-title { font-family: 'Orbitron'; font-size: 2.2rem; color: var(--neon-cyan); margin-bottom: 60px; text-align: center; }
 
+/* 🏥 STAGE SPECIFIQUE (SANS IMAGES) */
+.ghu-desc { color: #94a3b8; margin: 15px 0; font-size: 1.1rem; }
+.separator { height: 1px; background: var(--glass-border); margin: 30px 0; }
+.separator-mini { height: 1px; background: var(--glass-border); margin: 20px 0; width: 20%; }
+.cyan-text { color: var(--neon-cyan); font-family: 'Orbitron'; margin-bottom: 10px; }
+.stage-item p { color: #cbd5e1; font-size: 1rem; }
+
 /* 📱 MOBILE */
 @media (max-width: 900px) {
     .burger { display: block; }
     .menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: rgba(2, 6, 23, 0.98); padding: 30px; }
     .menu.active { display: flex; }
-    .stage-header { flex-direction: column; text-align: center; }
 }
 .footer { padding: 40px; text-align: center; border-top: 1px solid var(--glass-border); color: #64748b; }
