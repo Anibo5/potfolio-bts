@@ -54,7 +54,7 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .menu a:hover, .menu a.active { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); }
 .burger { display: none; cursor: pointer; font-size: 1.8rem; color: var(--neon-cyan); }
 
-/* 🏠 ACCUEIL (CORRIGÉ & CENTRÉ) */
+/* 🏠 ACCUEIL (CENTRÉ) */
 .hero-section {
     height: 100vh; width: 100%;
     display: flex; flex-direction: column;
@@ -80,6 +80,15 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .btn-outline { border: 2px solid #475569; color: #ffffff; background: rgba(255, 255, 255, 0.05); }
 .btn-outline:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
 
+/* 🖱️ MINI BOUTONS (Certifs) */
+.btn-mini {
+    padding: 6px 15px; font-family: 'Orbitron'; font-size: 0.65rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px; text-decoration: none;
+    transition: 0.3s; display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 4px; cursor: pointer; margin-top: 10px; color: var(--neon-cyan);
+}
+.btn-mini:hover { background: var(--neon-cyan); color: #020617; }
+
 /* 💎 CARDS & SECTIONS */
 .glass-card { background: var(--glass); backdrop-filter: blur(15px); border-radius: 20px; padding: 45px; transition: 0.4s; }
 .grid, .grid-veille { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
@@ -87,6 +96,9 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .container { width: 100%; max-width: 1150px; margin: 0 auto; }
 .section-title { font-family: 'Orbitron'; font-size: 2.2rem; color: var(--neon-cyan); margin-bottom: 60px; text-transform: uppercase; text-align: center; letter-spacing: 4px; }
 .text-center { text-align: center; width: 100%; }
+
+.skills-tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+.skills-tags span { background: rgba(0, 255, 225, 0.1); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 4px 12px; border-radius: 15px; font-size: 0.75rem; font-weight: bold; }
 
 /* 🎭 ANIMATIONS */
 .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s ease-out; }
