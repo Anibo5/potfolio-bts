@@ -60,18 +60,18 @@
                     <div class="mini-card">
                         <span class="icon">🛡️</span>
                         <h4>ANSSI</h4>
-                        <p>SecNumAcadémie certifié (2024). Panorama de la SSI et sécurité des SI.</p>
+                        <p>SecNumAcadémie certifié (2024).</p>
                         <a href="Certif_ANSSI.pdf" target="_blank" class="btn-mini rgb-effect">Détails</a>
                     </div>
                     <div class="mini-card">
                         <span class="icon">✅</span>
                         <h4>PIX</h4>
-                        <p>Certification des compétences numériques (Maîtrise des outils pro et sécurité).</p>
+                        <p>Certification des compétences numériques.</p>
                     </div>
                     <div class="mini-card">
                         <span class="icon">🌐</span>
                         <h4>Inria</h4>
-                        <p>Badge Web Sémantique (2025). Standards RDF et interrogation SPARQL.</p>
+                        <p>Badge Web Sémantique (2025).</p>
                         <a href="Certif_Inria.pdf" target="_blank" class="btn-mini rgb-effect">Détails</a>
                     </div>
                 </div>
@@ -85,11 +85,16 @@
             <div class="grid">
                 <div class="project-card glass-card rgb-effect">
                     <div class="card-header">🛠️ Gestion de Parc (GLPI)</div>
-                    <p>Déploiement d'une solution d'inventaire automatisé et de ticketing pour optimiser la maintenance informatique et le support utilisateur.</p>
+                    <p>Mise en œuvre d'une solution de gestion de services informatiques GLPI 10.0.24[cite: 80, 110]. Installation de l'agent 1.16 et du plugin Inventory pour la remontée automatique du matériel[cite: 112, 114, 120].</p>
+                    <br>
+                    <a href="FicheRP1.pdf" target="_blank" class="btn-cyber rgb-effect">Fiche RP 1 GLPI</a>
                 </div>
+
                 <div class="project-card glass-card rgb-effect">
                     <div class="card-header">🌍 Serveur Web Apache2</div>
-                    <p>Mise en service de serveurs Web sous Debian. Configuration de Virtual Hosts et sécurisation des flux via protocoles SSL/TLS.</p>
+                    <p>Déploiement d'un serveur HTTP Apache2 sur Debian 13[cite: 15, 29]. Configuration des répertoires "public_html" pour permettre aux collaborateurs d'héberger leurs pages personnelles[cite: 26, 49, 51].</p>
+                    <br>
+                    <a href="FicheRP2.pdf" target="_blank" class="btn-cyber rgb-effect">Fiche RP 2 Serveur Apache2</a>
                 </div>
             </div>
         </div>
@@ -101,14 +106,12 @@
             <div class="glass-card rgb-effect">
                 
                 <div class="stage-header">
-                    <img src="logo_ghu.png" alt="Logo GHU Paris" class="ghu-logo">
+                    <img src="logo_ghu.png.png" alt="Logo GHU Paris" class="ghu-logo">
                     <div class="ghu-info">
                         <h3 class="cyan-text">GHU Paris Psychiatrie & Neurosciences</h3>
                         <p><strong>Site : Hôpital Sainte-Anne</strong></p>
                         <p class="ghu-desc">
-                            Le GHU Paris est le premier acteur hospitalier parisien en santé mentale. 
-                            J'ai intégré le service informatique de l'hôpital Sainte-Anne, un établissement de référence 
-                            gérant des infrastructures critiques pour la médecine et la recherche.
+                            Le GHU Paris est le premier acteur hospitalier parisien en santé mentale. J'ai intégré la DSI de l'Hôpital Sainte-Anne pour assurer le support et l'évolution des infrastructures critiques.
                         </p>
                         <a href="https://www.ghu-paris.fr/fr" target="_blank" class="btn-mini rgb-effect">Visiter le site du GHU →</a>
                     </div>
@@ -117,13 +120,29 @@
                 <div class="separator"></div>
 
                 <div class="stage-content-grid">
-                    <div class="stage-text">
-                        <h4 class="cyan-text">Missions & Compétences développées</h4>
-                        <ul class="task-list">
-                            <li><strong>Masterisation via PXE :</strong> Déploiement automatisé d'images système personnalisées via le réseau (WDS/MDT).</li>
-                            <li><strong>Migration Windows 11 :</strong> Mise à jour massive et sécurisation du parc informatique hospitalier.</li>
-                            <li><strong>Support Niveau 2 :</strong> Diagnostic et résolution d'incidents matériels et réseaux via la plateforme GLPI.</li>
-                        </ul>
+                    <div class="stage-item">
+                        <h4 class="cyan-text">Support et Maintenance</h4>
+                        <p>Utilisation de la Connexion Bureau à Distance pour intervenir rapidement sur les postes utilisateurs du pavillon.</p>
+                        <img src="Bureau a distance.jpg" alt="Support RDP" class="proof-img">
+                    </div>
+
+                    <div class="separator-mini"></div>
+
+                    <div class="stage-item">
+                        <h4 class="cyan-text">Automatisation (PowerShell)</h4>
+                        <p>Déploiement et diagnostic du logiciel métier "HM" (Hôpital Manager). Utilisation de scripts PowerShell pour la vérification des processus Java et de la connectivité réseau.</p>
+                        <div class="img-group">
+                            <img src="HM preuve 1.jpg" alt="Debug PowerShell" class="proof-img">
+                            <img src="HM preuve 2.jpg" alt="Install PowerShell" class="proof-img">
+                        </div>
+                    </div>
+
+                    <div class="separator-mini"></div>
+
+                    <div class="stage-item">
+                        <h4 class="cyan-text">Inventaire GLPI</h4>
+                        <p>Gestion du patrimoine informatique via l'interface GLPI, permettant d'identifier précisément les ressources (modèle, lieu, utilisateur).</p>
+                        <img src="inventaire glpi.jpg" alt="Inventaire GLPI" class="proof-img">
                     </div>
                 </div>
             </div>
@@ -138,26 +157,15 @@
                 <div class="grid-veille">
                     <div class="veille-item">
                         <h4>🩺 Aide au Diagnostic</h4>
-                        <p>L’IA analyse des imageries complexes avec une précision accrue pour la détection précoce des pathologies.</p>
+                        <p>Analyse d'imageries complexes avec une précision accrue pour la détection précoce des pathologies.</p>
                     </div>
                     <div class="veille-item">
                         <h4>🔮 Médecine Prédictive</h4>
-                        <p>Anticipation des maladies par l'analyse de données épidémiologiques massives pour améliorer la prévention.</p>
-                    </div>
-                    <div class="veille-item">
-                        <h4>🧬 Soins Personnalisés</h4>
-                        <p>Analyse génétique pour adapter les traitements à chaque patient et réduire les effets secondaires.</p>
-                    </div>
-                    <div class="veille-item">
-                        <h4>📡 Monitoring Radar</h4>
-                        <p>Surveillance des constantes vitales sans contact physique grâce à l'IA couplée à la technologie radar.</p>
+                        <p>Anticipation des maladies par l'analyse de données épidémiologiques massives.</p>
                     </div>
                 </div>
                 <div class="text-center" style="margin-top: 30px;">
-                    <a href="https://gitlab.com/bouchama2/BOUCHAMA" target="_blank" class="btn-cyber rgb-effect">Accéder à ma veille sur GitLab</a>
-                </div>
-                <div class="veille-footer" style="text-align:center; margin-top:20px; color:#94a3b8; font-size: 0.9rem;">
-                    <p>Actualité : La France investit 109 milliards d'euros pour accélérer l'IA en santé.</p>
+                    <a href="https://gitlab.com/bouchama2/BOUCHAMA" target="_blank" class="btn-cyber rgb-effect">Ma veille sur GitLab</a>
                 </div>
             </div>
         </div>
@@ -165,12 +173,12 @@
 
     <section id="bilan" class="section">
         <div class="container reveal">
-            <h2 class="section-title">Bilan de Parcours</h2>
+            <h2 class="section-title">Bilan</h2>
             <div class="glass-card rgb-effect text-center">
                 <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 30px;">
-                    Ces deux années en <strong>BTS SIO option SISR</strong> m'ont permis de transformer ma passion pour l'informatique en une expertise technique structurée. J'ai acquis une autonomie réelle dans le déploiement d'infrastructures (Windows/Linux), la gestion de réseaux complexes et la mise en œuvre de politiques de sécurité rigoureuses. Au-delà de la technique, ce cursus m'a apporté une méthodologie professionnelle indispensable pour accompagner les utilisateurs au sein d'environnements critiques comme le GHU Paris.
+                    Ces deux années en <strong>BTS SIO option SISR</strong> m'ont permis de forger une expertise solide en administration systèmes et réseaux. J'ai développé des compétences clés dans le déploiement de serveurs (Linux/Windows), la sécurisation des infrastructures et l'automatisation via scripts. Mon immersion au GHU Paris a renforcé ma capacité à gérer des environnements critiques et à assurer un support de qualité, tout en maintenant une veille constante sur les innovations comme l'Intelligence Artificielle.
                 </p>
-                <a href="TablSynth.pdf" target="_blank" class="btn-cyber rgb-effect">Ouvrir le Tableau de Synthèse</a>
+                <a href="TablSynth.pdf" target="_blank" class="btn-cyber rgb-effect">Tableau de Synthèse Complet</a>
             </div>
         </div>
     </section>
@@ -185,7 +193,7 @@
                 </div>
                 <div class="contact-box" style="border-left: 1px solid var(--glass-border);">
                     <p>👨‍💻 <strong>Ressources :</strong></p>
-                    <a href="https://gitlab.com/bouchama2/BOUCHAMA" target="_blank" class="btn-link">Accéder à mon GitLab →</a>
+                    <a href="https://gitlab.com/bouchama2/BOUCHAMA" target="_blank" class="btn-link">Mon GitLab →</a>
                 </div>
             </div>
         </div>
