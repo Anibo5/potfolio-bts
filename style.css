@@ -80,7 +80,7 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .btn-outline { border: 2px solid #475569; color: #ffffff; background: rgba(255, 255, 255, 0.05); }
 .btn-outline:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
 
-/* 🖱️ MINI BOUTONS (Certifs) */
+/* 🖱️ MINI BOUTONS */
 .btn-mini {
     padding: 6px 15px; font-family: 'Orbitron'; font-size: 0.65rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 1px; text-decoration: none;
