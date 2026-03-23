@@ -48,16 +48,13 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
     backdrop-filter: blur(10px); border-bottom: 1px solid var(--glass-border); 
     z-index: 1000; 
 }
-
 .logo { font-family: 'Orbitron'; color: var(--neon-cyan); font-weight: bold; font-size: 1.5rem; letter-spacing: 2px; }
-
 .menu { display: flex; gap: 15px; }
-.menu a { text-decoration: none; color: #94a3b8; margin-left: 20px; font-size: 0.9rem; transition: 0.3s; font-weight: 500; }
+.menu a { text-decoration: none; color: #94a3b8; margin-left: 15px; font-size: 0.9rem; transition: 0.3s; font-weight: 500; }
 .menu a:hover, .menu a.active { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); }
-
 .burger { display: none; cursor: pointer; font-size: 1.8rem; color: var(--neon-cyan); }
 
-/* 🏠 ACCUEIL (CENTRE) */
+/* 🏠 ACCUEIL (CORRIGÉ & CENTRÉ) */
 .hero-section {
     height: 100vh; width: 100%;
     display: flex; flex-direction: column;
@@ -65,42 +62,37 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
     text-align: center; padding: 0 5%;
     padding-top: 80px;
 }
-
 .hero-content { max-width: 900px; width: 100%; display: flex; flex-direction: column; align-items: center; }
-.glitch { font-family: 'Orbitron'; font-size: clamp(2.5rem, 8vw, 4.5rem); letter-spacing: 12px; color: var(--neon-cyan); }
-.subtitle { font-size: 1.3rem; color: #94a3b8; margin: 20px 0; font-weight: bold; }
-.hero-desc { max-width: 750px; margin: 20px auto 40px auto; color: #94a3b8; font-size: 1.15rem; line-height: 1.8; }
+.glitch { font-family: 'Orbitron'; font-size: clamp(2.2rem, 8vw, 4.2rem); letter-spacing: 12px; color: var(--neon-cyan); }
+.subtitle { font-size: 1.25rem; color: #94a3b8; margin: 20px 0; font-weight: bold; }
+.hero-desc { max-width: 750px; margin: 20px auto 40px auto; color: #94a3b8; font-size: 1.1rem; line-height: 1.8; }
 
-/* 🚀 BOUTONS */
-.hero-btns { display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; }
-
+/* 🚀 BOUTONS HARMONISÉS */
+.hero-btns { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
 .btn-cyber, .btn-outline {
-    padding: 16px 35px; font-family: 'Orbitron'; font-size: 0.85rem; font-weight: 700;
+    padding: 16px 32px; font-family: 'Orbitron'; font-size: 0.85rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 2px; text-decoration: none;
     transition: 0.4s ease; display: inline-flex; align-items: center; justify-content: center;
     min-width: 250px; border-radius: 4px; cursor: pointer;
 }
 .btn-cyber { border: 2px solid var(--neon-cyan); color: var(--neon-cyan); background: transparent; }
 .btn-cyber:hover { background: var(--neon-cyan); color: #020617; box-shadow: 0 0 25px var(--neon-cyan); transform: translateY(-2px); }
-
 .btn-outline { border: 2px solid #475569; color: #ffffff; background: rgba(255, 255, 255, 0.05); }
 .btn-outline:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
 
 /* 💎 CARDS & SECTIONS */
 .glass-card { background: var(--glass); backdrop-filter: blur(15px); border-radius: 20px; padding: 45px; transition: 0.4s; }
 .grid, .grid-veille { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-.section { padding: 120px 10% 80px; min-height: 100vh; display: flex; align-items: center; }
+.section { padding: 100px 10% 80px; min-height: 100vh; display: flex; align-items: center; }
 .container { width: 100%; max-width: 1150px; margin: 0 auto; }
 .section-title { font-family: 'Orbitron'; font-size: 2.2rem; color: var(--neon-cyan); margin-bottom: 60px; text-transform: uppercase; text-align: center; letter-spacing: 4px; }
-
-.skills-tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
-.skills-tags span { background: rgba(0, 255, 225, 0.1); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 4px 12px; border-radius: 15px; font-size: 0.75rem; font-weight: bold; }
+.text-center { text-align: center; width: 100%; }
 
 /* 🎭 ANIMATIONS */
 .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s ease-out; }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
-/* 📱 MOBILE */
+/* 📱 RESPONSIVE */
 @media (max-width: 900px) {
     .burger { display: block; }
     .menu { 
@@ -112,5 +104,4 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
     .hero-btns { flex-direction: column; width: 100%; }
     .btn-cyber, .btn-outline { width: 100%; }
 }
-
 .footer { padding: 40px; text-align: center; border-top: 1px solid var(--glass-border); color: #64748b; }
