@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anis Bouchama | Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="glass-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">ANIS.SYS</div>
+        <div class="menu" id="menu">
+            <a href="#home" class="nav-link active">Accueil</a>
+            <a href="#about" class="nav-link">Profil</a>
+            <a href="#projects" class="nav-link">Projets</a>
+            <a href="#stage" class="nav-link">Stage</a>
+            <a href="#veille" class="nav-link">Veille IA</a>
+            <a href="#bilan" class="nav-link">Bilan E5</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="burger" id="burger"><span>&#9776;</span></div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content reveal">
+            <h1 class="glitch">ANIS BOUCHAMA</h1>
+            <p class="subtitle">Étudiant en BTS SIO option SISR | Session 2026</p>
+            <p class="hero-desc">
+                Administrateur systèmes et réseaux en devenir. <br>
+                Expertise axée sur la gestion d'infrastructures critiques et la sécurisation des environnements numériques.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-cyber rgb-effect">Explorer mes travaux</a>
+                <a href="TablSynth.pdf" target="_blank" class="btn-outline">Tableau de Synthèse</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span></span></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Parcours & Certifications</h2>
+            <div class="glass-card rgb-effect about-grid">
+                <div class="about-text">
+                    <p>Actuellement en <strong>BTS SIO option SISR</strong>, je me spécialise dans la conception et la maintenance de solutions d'infrastructure. Mon cursus allie rigueur technique et veille constante sur les menaces cyber.</p>
+                    <div class="skills-tags">
+                        <span>Linux Debian</span><span>Windows Server</span><span>Virtualisation</span><span>Active Directory</span><span>Cisco</span><span>Bash</span><span>Pix</span>
+                    </div>
+                </div>
+                <div class="certifs-grid">
+                    <div class="mini-card">
+                        <span class="icon">🛡️</span>
+                        <h4>ANSSI</h4>
+                        <p>SecNumAcadémie certifié (2024). Panorama de la SSI et sécurité des postes.</p>
+                    </div>
+                    <div class="mini-card">
+                        <span class="icon">✅</span>
+                        <h4>PIX</h4>
+                        <p>Certification des compétences numériques (Maîtrise des outils et sécurisation).</p>
+                    </div>
+                    <div class="mini-card">
+                        <span class="icon">🌐</span>
+                        <h4>Inria</h4>
+                        <p>Badge Web Sémantique (2025). Standards RDF et interrogation SPARQL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Réalisations Techniques</h2>
+            <div class="grid">
+                <div class="project-card glass-card rgb-effect">
+                    <div class="card-header">🛠️ Gestion de Parc (GLPI)</div>
+                    <p>Déploiement d'une solution d'inventaire automatisé. Gestion du cycle de vie des actifs matériels et optimisation du support utilisateur via ticketing.</p>
+                </div>
+                <div class="project-card glass-card rgb-effect">
+                    <div class="card-header">🌍 Serveur Web Apache2</div>
+                    <p>Mise en service de serveurs Web sous Debian. Configuration de Virtual Hosts et sécurisation des flux via protocoles SSL/TLS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Mon Stage</h2>
+            <div class="glass-card rgb-effect stage-box">
+                <h3 class="cyan-text">Service Informatique - GHU Paris (Hôpital Sainte-Anne)</h3>
+                <p class="date">Session 2025 - 2026</p>
+                <div class="stage-content">
+                    <ul class="task-list">
+                        <li><strong>Masterisation via PXE :</strong> Déploiement automatisé d'images système personnalisées via le réseau (WDS/MDT).</li>
+                        <li><strong>Migration Windows 11 :</strong> Mise à jour massive du parc informatique hospitalier critique.</li>
+                        <li><strong>Support Niveau 2 :</strong> Diagnostic et résolution d'incidents matériels et réseaux via GLPI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Veille Technologique</h2>
+            <div class="glass-card rgb-effect">
+                <h3 class="cyan-text" style="text-align: center; margin-bottom: 20px;">L'IA dans la médecine et ses progrès</h3>
+                <p style="text-align: center; margin-bottom: 30px; font-style: italic; color: #94a3b8;">Outils utilisés : Google Alerts, Feedly, Talkwalker Alerts.</p>
+                <div class="grid-veille">
+                    <div class="veille-item">
+                        <h4>🩺 Aide au Diagnostic</h4>
+                        <p>L’IA analyse des imageries complexes avec une précision supérieure aux médecins, facilitant la détection précoce des cancers.</p>
+                    </div>
+                    <div class="veille-item">
+                        <h4>🔮 Médecine Prédictive</h4>
+                        <p>Anticipation des maladies et pandémies en analysant des flux de données épidémiologiques massifs pour améliorer la prévention.</p>
+                    </div>
+                    <div class="veille-item">
+                        <h4>🧬 Soins Personnalisés</h4>
+                        <p>Analyse génétique pour adapter les traitements à chaque patient, améliorant l'efficacité et réduisant les effets secondaires.</p>
+                    </div>
+                    <div class="veille-item">
+                        <h4>📡 Monitoring Radar</h4>
+                        <p>Surveillance des constantes vitales (rythme cardiaque, respiration) sans contact physique grâce à l'IA couplée à la technologie radar.</p>
+                    </div>
+                </div>
+                <div class="veille-footer">
+                    <p>Actualité : La France investit 109 milliards d'euros pour accélérer l'IA en santé et moderniser les hôpitaux publics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bilan" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Bilan E5</h2>
+            <div class="glass-card rgb-effect text-center">
+                <p>Mon parcours valide l'ensemble des compétences du référentiel SISR : gestion de patrimoine, incidents, services réseaux et cybersécurité.</p>
+                <br>
+                <a href="TablSynth.pdf" target="_blank" class="btn-cyber rgb-effect">Ouvrir le Tableau de Synthèse</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Contact & Liens</h2>
+            <div class="glass-card rgb-effect contact-grid">
+                <div class="contact-box">
+                    <p>📍 Jouy-le-Moutier / Île-de-France</p>
+                    <p>📧 <a href="mailto:anisbchm@gmail.com" style="color: var(--neon-cyan);">anisbchm@gmail.com</a></p>
+                </div>
+                <div class="contact-box" style="border-left: 1px solid var(--glass-border);">
+                    <p>👨‍💻 <strong>Ressources :</strong></p>
+                    <a href="https://gitlab.com/bouchama2/BOUCHAMA" target="_blank" class="btn-link">Mon GitLab Professionnel →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Anis Bouchama - Portfolio SISR</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
