@@ -12,7 +12,7 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; line-height: 1.6; }
 
-/* 🌊 ARRIÈRE-PLAN */
+/* 🌊 ARRIÈRE-PLAN ANIMÉ */
 .background-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: #020617; overflow: hidden; }
 .blob { position: absolute; width: 500px; height: 500px; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); filter: blur(120px); border-radius: 50%; opacity: 0.12; }
 .blob-1 { top: -10%; left: -10%; animation: move1 20s infinite alternate; }
@@ -41,28 +41,31 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
 .burger { display: none; cursor: pointer; font-size: 1.8rem; color: var(--neon-cyan); }
 
 /* 🏠 HERO */
-.hero-section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding-top: 80px; }
+.hero-section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .glitch { font-family: 'Orbitron'; font-size: clamp(2.2rem, 8vw, 4.2rem); letter-spacing: 12px; color: var(--neon-cyan); }
 .hero-desc { max-width: 750px; margin: 30px auto; color: #94a3b8; font-size: 1.1rem; }
 
 /* 🚀 BOUTONS */
 .hero-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .btn-cyber, .btn-outline { padding: 16px 32px; font-family: 'Orbitron'; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; transition: 0.4s; min-width: 250px; border-radius: 4px; display: inline-flex; justify-content: center; align-items: center; }
-.btn-cyber { border: 2px solid var(--neon-cyan); color: var(--neon-cyan); }
+.btn-cyber { border: 2px solid var(--neon-cyan); color: var(--neon-cyan); cursor: pointer; }
 .btn-cyber:hover { background: var(--neon-cyan); color: #020617; box-shadow: 0 0 25px var(--neon-cyan); }
 .btn-outline { border: 2px solid #475569; color: #ffffff; background: rgba(255, 255, 255, 0.05); }
 .btn-outline:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
 .btn-mini { padding: 6px 15px; font-family: 'Orbitron'; font-size: 0.65rem; color: var(--neon-cyan); text-decoration: none; border-radius: 4px; margin-top: 10px; display: inline-block; }
 .btn-mini:hover { background: var(--neon-cyan); color: #020617; }
 
-/* 🏥 SECTION STAGE (GHU PARIS) */
-.stage-header { display: flex; align-items: center; gap: 40px; margin-bottom: 20px; text-align: left; }
-.ghu-logo { max-width: 160px; height: auto; border-radius: 8px; background: rgba(255, 255, 255, 0.9); padding: 10px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
-.ghu-desc { margin: 15px 0; color: #94a3b8; font-size: 1rem; }
+/* 🏥 STAGE (Structure et Preuves) */
+.stage-header { display: flex; align-items: center; gap: 30px; text-align: left; }
+.ghu-logo { max-width: 150px; height: auto; border-radius: 8px; background: white; padding: 10px; }
+.ghu-desc { color: #94a3b8; margin: 15px 0; }
+.proof-img { max-width: 100%; height: auto; border-radius: 8px; margin: 15px 0; border: 1px solid var(--glass-border); }
+.img-group { display: flex; gap: 15px; flex-wrap: wrap; }
 .separator { height: 1px; background: var(--glass-border); margin: 30px 0; width: 100%; }
+.separator-mini { height: 1px; background: var(--glass-border); margin: 20px 0; width: 50%; }
 .cyan-text { color: var(--neon-cyan); font-family: 'Orbitron'; margin-bottom: 10px; }
 .task-list { list-style: none; text-align: left; padding-left: 20px; }
-.task-list li { margin-bottom: 10px; position: relative; }
+.task-list li { margin-bottom: 8px; position: relative; }
 .task-list li::before { content: "▹"; color: var(--neon-cyan); position: absolute; left: -20px; }
 
 /* 💎 SECTIONS */
@@ -78,5 +81,7 @@ body { font-family: 'Rajdhani', sans-serif; background-color: var(--bg-dark); co
     .menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: rgba(2, 6, 23, 0.98); padding: 30px; border-bottom: 1px solid var(--glass-border); }
     .menu.active { display: flex; }
     .stage-header { flex-direction: column; text-align: center; }
+    .stage-item { text-align: center; }
+    .task-list { padding-left: 0; display: inline-block; text-align: left; }
 }
 .footer { padding: 40px; text-align: center; border-top: 1px solid var(--glass-border); color: #64748b; }
